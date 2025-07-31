@@ -20,9 +20,9 @@ If you are a developer or architect who wants to take your cloud-based applicati
 
 In this highly interactive session, you’ll learn how to:
 
-\- Create and manage messaging services in the cloud using hands-on labs.
-\- Use practical, real-world examples and implement messaging patterns by implementing key messaging patterns to improve application reliability and scalability.
-\- Guided, hands-on activities to implement best practices and troubleshoot common issues.
+- Create and manage messaging services in the cloud using hands-on labs.
+- Use practical, real-world examples and implement messaging patterns by implementing key messaging patterns to improve application reliability and scalability.
+- Guided, hands-on activities to implement best practices and troubleshoot common issues.
 
 When you leave this session, you’ll understand how to use messaging patterns to build resilient cloud applications, primed to build for the challenges you face in your cloud architecture.
 
