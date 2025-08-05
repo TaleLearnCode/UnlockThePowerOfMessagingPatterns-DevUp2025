@@ -37,4 +37,4 @@ When you leave this session, you’ll understand how to use messaging patterns t
 - [Prerequisites](prerequisites.md)
 - [Slides](slides)
 - [Lab Exercises](labs)
-  - [Demos](demos)
+- [Demos](demos)
