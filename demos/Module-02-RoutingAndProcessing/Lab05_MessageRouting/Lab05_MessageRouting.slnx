@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AlphaConsumer/AlphaConsumer.csproj" />
+  <Project Path="EventConsumerCore/EventConsumerCore.csproj" />
+  <Project Path="EventPublisher/EventPublisher.csproj" />
+  <Project Path="FallbackConsumer/FallbackConsumer.csproj" />
+  <Project Path="InventoryConsumer/InventoryConsumer.csproj" />
+</Solution>

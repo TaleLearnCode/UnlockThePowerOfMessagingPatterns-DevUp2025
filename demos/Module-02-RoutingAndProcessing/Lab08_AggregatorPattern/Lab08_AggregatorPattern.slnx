@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="AggregatorConsumer/AggregatorConsumer.csproj" />
+  <Project Path="FulfillmentObserver/FulfillmentObserver.csproj" />
+  <Project Path="InventoryProducer/InventoryProducer.csproj" />
+  <Project Path="OrderProducer/OrderProducer.csproj" />
+  <Project Path="PaymentProducer/PaymentProducer.csproj" />
+  <Project Path="SharedLib/SharedLib.csproj" />
+</Solution>

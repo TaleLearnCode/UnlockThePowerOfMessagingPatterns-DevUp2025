@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Consumer/Consumer.csproj" />
+  <Project Path="DlqInspector/DlqInspector.csproj" Id="8ceff708-e883-46e0-b0b0-417b890b6c15" />
+  <Project Path="Producer/Producer.csproj" />
+</Solution>

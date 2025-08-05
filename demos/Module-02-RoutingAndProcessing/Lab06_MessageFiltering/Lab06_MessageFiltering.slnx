@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="EventConsumerCore/EventConsumerCore.csproj" />
+  <Project Path="FilteredEventPublisher/FilteredEventPublisher.csproj" />
+  <Project Path="HighPriorityConsumer/HighPriorityConsumer.csproj" />
+  <Project Path="LowPriorityConsumer/LowPriorityConsumer.csproj" />
+</Solution>
