@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="FulfillmentService/FulfillmentService.csproj" />
+  <Project Path="MessagingContracts/MessagingContracts.csproj" />
+  <Project Path="OrderClient/OrderClient.csproj" />
+  <Project Path="Persistence/Persistence.csproj" />
+  <Project Path="ReplyHandler/ReplyHandler.csproj" />
+</Solution>

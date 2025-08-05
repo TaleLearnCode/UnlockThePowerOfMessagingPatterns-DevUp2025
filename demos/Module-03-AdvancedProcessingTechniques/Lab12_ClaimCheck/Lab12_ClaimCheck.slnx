@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AttachmentConsumer/AttachmentConsumer.csproj" />
+  <Project Path="AttachmentProducer/AttachmentProducer.csproj" />
+</Solution>
