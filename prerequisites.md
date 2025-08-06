@@ -101,6 +101,8 @@ Before the workshop, please ensure you have the following tools installed and se
 
 - **Azure Service Bus Emulator**: [Azure Service Bus Emulator Installer](https://github.com/Azure/azure-service-bus-emulator-installer)
 
+- **Azurite**: [Install Azurite](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio%2Cblob-storage)
+
 > [!IMPORTANT] 
 > The emulator uses a specified JSON file to configure the Service Bus queues, topics, and subscriptions. Replace the `ServiceBus-Emulator\Config\Config.json` file with the [configuration file built for the workshop](config.json). This Config.json is built with all of the queues, topics, and subscriptions that will be used during the workshop.
 
