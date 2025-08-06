@@ -85,8 +85,46 @@ catch (Exception ex)
 /// A <see cref="ConcurrentQueue{OrderDetails}"/> that holds incoming orders to be displayed live.
 /// </returns>
 static ConcurrentQueue<OrderDetails> StartLiveOrderDisplay()
-{	ConcurrentQueue<OrderDetails> orders = new();	Table table = new Table()		.Border(TableBorder.Rounded)		.Title("")		.AddColumn("Order ID")		.AddColumn("Item")		.AddColumn("Quantity");	LiveDisplay live = AnsiConsole.Live(table)		.Overflow(VerticalOverflow.Crop)		.Cropping(VerticalOverflowCropping.Top);	_ = Task.Run(async () =>	{		await AnsiConsole.Live(table)		.Overflow(VerticalOverflow.Crop)		.Cropping(VerticalOverflowCropping.Top)		.StartAsync(async ctx =>		{			while (true)			{				while (orders.TryDequeue(out OrderDetails? order))				{					table.AddRow(						$"[green]{order.OrderId}[/]",						$"[blue]{order.Item}[/]",						$"[red]{order.Quantity}[/]"						);				}				ctx.Refresh();				await Task.Delay(500);			}		});	});
-	return orders;
+{
+
+	ConcurrentQueue<OrderDetails> orders = new();
+
+	Table table = new Table()
+		.Border(TableBorder.Rounded)
+		.Title("")
+		.AddColumn("Order ID")
+		.AddColumn("Item")
+		.AddColumn("Quantity");
+
+	LiveDisplay live = AnsiConsole.Live(table)
+		.Overflow(VerticalOverflow.Crop)
+		.Cropping(VerticalOverflowCropping.Top);
+
+	_ = Task.Run(async () =>
+	{
+		await AnsiConsole.Live(table)
+		.Overflow(VerticalOverflow.Crop)
+		.Cropping(VerticalOverflowCropping.Top)
+		.StartAsync(async ctx =>
+		{
+			while (true)
+			{
+				while (orders.TryDequeue(out OrderDetails? order))
+				{
+					table.AddRow(
+						$"[green]{order.OrderId}[/]",
+						$"[blue]{order.Item}[/]",
+						$"[red]{order.Quantity}[/]"
+						);
+				}
+				ctx.Refresh();
+				await Task.Delay(500);
+			}
+		});
+	});
+
+	return orders;
+
 }
 
 /// <summary>
